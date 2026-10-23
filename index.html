@@ -6,11 +6,12 @@
 <title>Sakarya Vet Veteriner Kliniği | Arifiye, Sakarya</title>
 <meta name="description" content="Sakarya Vet Veteriner Kliniği - Arifiye / Sakarya. 1992'den beri Vet. Hek. Mustafa Yıldız. Online randevu, aşı, muayene, cerrahi, laboratuvar ve pet kuaför hizmetleri.">
 <meta name="theme-color" content="#1d5a46">
-<link rel="icon" href="logo.png">
-<link rel="apple-touch-icon" href="logo.png">
+<link rel="icon" href="logo.webp" type="image/webp">
+<link rel="apple-touch-icon" href="logo-180.png">
 <meta property="og:title" content="Sakarya Vet Veteriner Kliniği | Arifiye, Sakarya">
 <meta property="og:description" content="Online randevu, aşı, muayene, cerrahi ve pet kuaför hizmetleri.">
-<meta property="og:image" content="banner.png">
+<meta property="og:image" content="banner.webp">
+<link rel="preload" as="image" href="banner.webp" imagesrcset="banner-800.webp 800w, banner.webp 1600w" imagesizes="(max-width: 1152px) 100vw, 1152px">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,8 +27,8 @@ const CONFIG = {
   maps: "https://www.google.com/maps/search/?api=1&query=Sakarya+Vet+Veterinerlik+Klini%C4%9Fi+Arifiye",
   instagram: "https://www.instagram.com/sakaryaveterinerklinigi/",
   acilSaat: "7/24 acil danışma",
-  logo: "logo.png",
-  banner: "banner.png"
+  logo: "logo.webp",
+  banner: "banner.webp"
 };
 tailwind.config = { theme: { extend: {
   fontFamily: { sans: ['"Plus Jakarta Sans"','system-ui','sans-serif'] },
@@ -50,7 +51,7 @@ tailwind.config = { theme: { extend: {
 <header class="sticky top-0 z-40 bg-white/85 backdrop-blur border-b border-stone-200">
   <div class="mx-auto max-w-5xl px-4 h-16 flex items-center justify-between gap-3">
     <a href="#" class="flex items-center gap-2 min-w-0">
-      <img src="logo.png" alt="Sakarya Vet Veteriner Kliniği" class="h-11 w-11 object-contain shrink-0">
+      <img src="logo.webp" alt="Sakarya Vet Veteriner Kliniği" class="h-11 w-11 object-contain shrink-0" width="128" height="128" fetchpriority="high" decoding="async">
       <span class="min-w-0">
         <span class="block font-extrabold leading-tight truncate">Sakarya Vet</span>
         <span class="block text-[11px] text-stone-500 leading-tight">Veteriner Kliniği · Arifiye</span>
@@ -67,8 +68,9 @@ tailwind.config = { theme: { extend: {
 </header>
 
 <section id="banner" class="bg-[#f7f4ea]">
-  <img src="banner.png" alt="Sakarya Vet Veteriner Kliniği — 1992'den beri minik dostlarınız için"
-       class="w-full max-w-6xl mx-auto block" width="2172" height="724" fetchpriority="high">
+  <img src="banner.webp" srcset="banner-800.webp 800w, banner.webp 1600w" sizes="(max-width: 1152px) 100vw, 1152px"
+       alt="Sakarya Vet Veteriner Kliniği — 1992'den beri minik dostlarınız için"
+       class="w-full max-w-6xl mx-auto block" width="1600" height="533" fetchpriority="high" decoding="async">
 </section>
 
 <section class="mx-auto max-w-5xl px-4 pt-7 pb-6">
